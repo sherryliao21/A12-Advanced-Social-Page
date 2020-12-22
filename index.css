@@ -1,0 +1,93 @@
+html {
+  /* Prevents padding from adding extra width/height to the page and the appearance of scrollbars */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* vh stands for viewport height, which is the full height of the entire window you're in. With this setting we want to always stretch our background to the full height of the screen.*/
+  min-height: 100vh;
+  /* display: flex;
+  /* justify-content: center; */
+  background-color: #e4e9ec;
+}
+
+#container {
+  margin: 0 10px;
+}
+
+#search-icon {
+  font-size: 20px;
+  color: #fff;
+  margin: 8px 8px 0 0;
+}
+
+#data-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-profile-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #51555e;
+}
+
+#user-profile-picture {
+  width: 100%;
+  height: 100%;
+}
+
+#user-profile-picture:hover {
+  cursor: pointer;
+}
+
+.card {
+  border: transparent;  
+}
+
+.card-body {
+  background-color: #f3f3f3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#paginator {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #333; /* dark grey */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 300px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#paginator {
+  opacity: 0.8
+}
+
+.page-link {
+  text-decoration: none;
+  color: #333;
+}
